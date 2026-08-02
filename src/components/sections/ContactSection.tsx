@@ -82,8 +82,9 @@ export default function ContactSection() {
         transition={{ duration: 0.6, delay: 0.1 }}
         className="mt-4 max-w-lg font-body text-ink-muted"
       >
-        Open to internships, freelance opportunities, AI projects, startup collaborations,
-        and software development work. Send a message and it opens straight in your email client.
+        Open to internships, job opportunities, custom AI projects, startup collaborations,
+        and for development work.{' '}
+        Have an idea? Send a message to start the conversation.
       </motion.p>
 
       <div className="mt-12 grid gap-10 md:grid-cols-[0.9fr_1.1fr]">

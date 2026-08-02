@@ -88,13 +88,8 @@ export default function Navbar() {
             e.preventDefault();
             handleNavClick('#home');
           }}
-          className="group flex items-center gap-1.5 font-display text-lg font-bold tracking-tight text-ink transition-opacity hover:opacity-90"
-        >
-          <span className="bg-gradient-to-r from-ink via-ink to-ink-muted bg-clip-text text-transparent group-hover:from-accent group-hover:to-accent-violet transition-colors">
-            {profile.shortName}
-          </span>
-          <span className="text-accent animate-pulse font-mono text-xl">.</span>
-        </a>
+          aria-label="Go to home"
+        />
 
         {/* Desktop Navigation Menu */}
         <div className="hidden lg:flex items-center gap-1 xl:gap-2">
