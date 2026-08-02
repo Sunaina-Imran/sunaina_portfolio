@@ -1,0 +1,528 @@
+{
+  "profile": {
+    "name": "Sunaina Imran",
+    "shortName": "Sunaina",
+    "tagline": "Designing intelligent systems that solve real-world problems, I build scalable AI products that transform complex business challenges into practical, intelligent solutions.",
+    "role": "AI / Machine Learning Engineer",
+    "roles": [
+      "AI / ML Engineer",
+      "Python Developer"
+    ],
+    "specialization": "AI & ML \u00b7 RAG Systems \u00b7 Full-Stack",
+    "location": "Hyderabad, Sindh, Pakistan",
+    "yearsOfExperience": "Undergraduate",
+    "bio": "Undergraduate BSc Artificial Intelligence student passionate about building intelligent, production-ready AI systems. I specialize in Generative AI, Multi-Agent Systems, RAG, Computer Vision, and Full-Stack Development, creating scalable solutions that automate workflows, unlock knowledge, and solve complex real-world problems.",
+    "resumeUrl": "/resume.pdf",
+    "avatarImage": "/src/assets/img/profile.jpg",
+    "social": {
+      "github": "https://github.com/Sunaina-Imran",
+      "linkedin": "https://www.linkedin.com/in/sunaina-imran-8b1b5032a",
+      "instagram": "https://instagram.com/sunainaimran.tech",
+      "email": "sunaina12492@gmail.com",
+      "phone": "+92 332 5025894",
+      "website": ""
+    }
+  },
+  "skills": {
+    "categories": [
+      {
+        "name": "Artificial Intelligence",
+        "items": [
+          "Generative AI",
+          "Large Language Models (LLMs)",
+          "Multi-Agent Systems",
+          "Agentic AI",
+          "Retrieval-Augmented Generation (RAG)",
+          "Prompt Engineering",
+          "AI Memory Systems",
+          "AI Workflow Automation",
+          "Knowledge Graph Fundamentals",
+          "Vector Search",
+          "Embeddings",
+          "AI Evaluation",
+          "AI Orchestration",
+          "LangGraph Workflows"
+        ]
+      },
+      {
+        "name": "Machine Learning",
+        "items": [
+          "Machine Learning",
+          "Deep Learning",
+          "CNN",
+          "NLP",
+          "Predictive Modeling",
+          "Feature Engineering",
+          "Model Evaluation",
+          "Classification",
+          "Regression",
+          "TensorFlow",
+          "Scikit-Learn"
+        ]
+      },
+      {
+        "name": "Computer Vision",
+        "items": [
+          "OpenCV",
+          "MediaPipe",
+          "Real-Time Gesture Recognition",
+          "Image Classification",
+          "Vision Pipelines",
+          "Webcam AI Applications"
+        ]
+      },
+      {
+        "name": "Backend",
+        "items": [
+          "Python",
+          "FastAPI",
+          "Flask",
+          "REST APIs",
+          "SQLAlchemy",
+          "JWT Authentication",
+          "API Design",
+          "Microservices Fundamentals"
+        ]
+      },
+      {
+        "name": "Frontend",
+        "items": [
+          "React",
+          "TypeScript",
+          "Tailwind CSS",
+          "Framer Motion",
+          "Streamlit"
+        ]
+      },
+      {
+        "name": "Databases",
+        "items": [
+          "PostgreSQL",
+          "SQLite",
+          "ChromaDB",
+          "Vector Databases",
+          "SQL",
+          "Database Design",
+          "MongoDB Compass"
+        ]
+      },
+      {
+        "name": "AI Frameworks",
+        "items": [
+          "LangGraph",
+          "LangChain",
+          "Sentence Transformers",
+          "Hugging Face",
+          "OpenRouter",
+          "Groq",
+          "Faster Whisper",
+          "RiveScript"
+        ]
+      },
+      {
+        "name": "DevOps",
+        "items": [
+          "Docker",
+          "Git",
+          "GitHub",
+          "GitHub Actions",
+          "Postman",
+          "Jupyter",
+          "Google Colab",
+          "Docker Hub",
+          "VS Code",
+          "FFmpeg",
+          "yt-dlp"
+        ]
+      },
+      {
+        "name": "Programming & Core CS",
+        "items": [
+          "Java",
+          "C",
+          "Object-Oriented Programming",
+          "Algorithm Analysis"
+        ]
+      },
+      {
+        "name": "Data Analysis & Visualization",
+        "items": [
+          "NumPy",
+          "Pandas",
+          "Matplotlib",
+          "Seaborn",
+          "NetworkX",
+          "Data Cleaning & Preprocessing",
+          "Exploratory Data Analysis",
+          "Data Visualization",
+          "JSON & REST API Integration"
+        ]
+      }
+    ]
+  },
+  "experience": [
+    {
+      "company": "Techwave Developers",
+      "role": "AI & Machine Learning Intern",
+      "period": "2026",
+      "location": "Remote",
+      "summary": "Built production AI features across multiple internal products \u2014 from RAG-powered assistants to LLM-integrated chat experiences and the backend services behind them.",
+      "highlights": [
+        "Designed and developed an AI-powered Internship Portal to streamline the internship application and management process",
+        "Built Scholarly AI, an intelligent research assistant that summarizes research papers and helps users understand complex academic content using AI",
+        "Developed an AI FAQ Chatbot for the company to automate responses to frequently asked questions and improve customer support",
+        "Worked on Retrieval-Augmented Generation (RAG) pipelines for document understanding and knowledge retrieval",
+        "Integrated Large Language Models (LLMs) using modern AI APIs to power intelligent conversational experiences",
+        "Built and optimized backend services using FastAPI, REST APIs, and Python",
+        "Worked with vector embeddings, document processing, semantic search, and AI-powered automation",
+        "Collaborated with the development team to design scalable AI solutions, improve user experience, and enhance internal workflows",
+        "Participated in debugging, testing, deployment, and continuous improvement of AI applications"
+      ]
+    },
+
+    {
+      "company": "Deloitte Australia (Forage)",
+      "role": "Virtual Experience \u2014 Data Analytics",
+      "period": "Virtual Experience",
+      "location": "Remote",
+      "summary": "Completed Deloitte's Data Analytics virtual experience program, working through simulated client analytics tasks.",
+      "highlights": [
+        "Worked through a simulated data analytics program mirroring real client work",
+        "Practiced structured analytical thinking on business-style data problems"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "deepdive-ai",
+      "title": "DeepDive AI",
+      "subtitle": "Intelligent Video Learning & Knowledge Assistant",
+      "description": "A full-stack AI platform that transforms YouTube videos and uploaded media into structured learning resources, with an automatic content classification pipeline and RAG-powered video chat grounded in the transcript.",
+      "stack": [
+        "Python",
+        "RAG",
+        "ChromaDB",
+        "FastAPI",
+        "React",
+        "NLP"
+      ],
+      "role": "Full-Stack / AI Engineer",
+      "year": "2026",
+      "repo": {
+        "type": "single",
+        "url": "https://github.com/Sunaina-Imran/deepdive_ai"
+      },
+      "liveUrl": "",
+      "image": ""
+    },
+    {
+      "id": "sortix-ai",
+      "title": "Sortix AI",
+      "subtitle": "Persona-Based AI Chatbot Platform",
+      "description": "A customizable AI chatbot platform where users create domain-specific assistants with knowledge retrieval, conversational memory, document-based Q&A, and secure, scalable multi-assistant management.",
+      "stack": [
+        "Python",
+        "RAG",
+        "FastAPI",
+        "JWT Auth",
+        "ChromaDB"
+      ],
+      "role": "Full-Stack / AI Engineer",
+      "year": "2026",
+      "repo": {
+        "type": "multi",
+        "repos": [
+          {
+            "label": "Backend",
+            "url": "https://github.com/Sunaina-Imran/Backend"
+          },
+          {
+            "label": "Frontend",
+            "url": "https://github.com/Sunaina-Imran/chat_frontend_rag"
+          }
+        ]
+      },
+      "liveUrl": "",
+      "image": ""
+    },
+    {
+      "id": "gesture-space-defender",
+      "title": "AI Gesture-Controlled Space Defender",
+      "subtitle": "Real-Time Computer Vision Game",
+      "description": "A real-time computer vision game controlled entirely through hand gestures via webcam, with gesture-based navigation, collision detection, score tracking, and a local leaderboard.",
+      "stack": [
+        "Python",
+        "OpenCV",
+        "MediaPipe",
+        "Computer Vision"
+      ],
+      "role": "CV / Game Developer",
+      "year": "2025",
+      "repo": {
+        "type": "single",
+        "url": "https://github.com/Sunaina-Imran/Space_Defender_Game"
+      },
+      "liveUrl": "",
+      "image": ""
+    },
+    {
+      "id": "linkedin-post-generator",
+      "title": "AI LinkedIn Post Generator",
+      "subtitle": "Prompt-Driven Content Generation Tool",
+      "description": "An AI-powered web app that generates LinkedIn posts from user prompts with customizable tone, length, and writing style, plus regeneration, copy-to-clipboard, and post history.",
+      "stack": [
+        "Python",
+        "Prompt Engineering",
+        "Streamlit",
+        "OpenRouter API"
+      ],
+      "role": "AI Developer",
+      "year": "2025",
+      "repo": {
+        "type": "multi",
+        "repos": [
+          {
+            "label": "Backend",
+            "url": "https://github.com/Sunaina-Imran/Backend"
+          },
+          {
+            "label": "Frontend",
+            "url": "https://github.com/Sunaina-Imran/Frontend-main"
+          }
+        ]
+      },
+      "liveUrl": "",
+      "image": ""
+    },
+    {
+      "id": "instagram-virality-prediction",
+      "title": "Instagram Virality Prediction",
+      "subtitle": "ML Model on Kaggle Datasets",
+      "description": "A machine learning model predicting the viral potential of Instagram posts, trained and evaluated on Kaggle datasets.",
+      "stack": [
+        "Python",
+        "Scikit-learn",
+        "Pandas",
+        "EDA"
+      ],
+      "role": "ML Developer",
+      "year": "2025",
+      "repo": {
+        "type": "academic",
+        "note": "This machine learning project was completed as a university team project using Kaggle datasets and received an A+ academic grade.",
+        "linkedinUrl": "https://www.linkedin.com/in/sunaina-imran-8b1b5032a"
+      },
+      "liveUrl": "",
+      "image": ""
+    },
+    {
+      "id": "sleep-disorder-predictor",
+      "title": "Sleep Disorder Predictor",
+      "subtitle": "Web-Based Machine Learning Application",
+      "description": "A web-based machine learning application for predicting sleep disorders from health and lifestyle data.",
+      "stack": [
+        "Python",
+        "Scikit-learn",
+        "Streamlit"
+      ],
+      "role": "ML Developer",
+      "year": "2025",
+      "repo": {
+        "type": "single",
+        "url": "https://github.com/Sunaina-Imran/Sleep_Disorder_Predictor"
+      },
+      "liveUrl": "",
+      "image": ""
+    },
+    {
+      "id": "cnn-image-classification",
+      "title": "Image Classification using CNN",
+      "subtitle": "Deep Learning Model",
+      "description": "A deep learning model for image classification built with Convolutional Neural Networks.",
+      "stack": [
+        "Python",
+        "TensorFlow",
+        "CNN",
+        "Deep Learning"
+      ],
+      "role": "ML Developer",
+      "year": "2025",
+      "repo": {
+        "type": "colab",
+        "note": "This deep learning project was developed and executed in Google Colab as part of my academic learning journey."
+      },
+      "liveUrl": "",
+      "image": ""
+    },
+    {
+      "id": "joke-generator-app",
+      "title": "Joke Generator App",
+      "subtitle": "Streamlit + REST API",
+      "description": "A fun yet practical Joke Generator web application using Python, Streamlit, and the public JokeAPI. The application fetches random programming, general, dark, and miscellaneous jokes through a REST API while providing a clean and interactive user interface.",
+      "stack": [
+        "Python",
+        "Streamlit",
+        "REST API"
+      ],
+      "role": "Python Developer",
+      "year": "2025",
+      "repo": {
+        "type": "single",
+        "url": "https://github.com/Sunaina-Imran/Joke_Generator_App"
+      },
+      "liveUrl": "",
+      "image": ""
+    }
+  ],
+  "certifications": [
+    {
+      "id": "google-ai-professional",
+      "name": "Google AI Professional Certificate",
+      "issuer": "Google \u00b7 Coursera",
+      "status": "Completed",
+      "issueDate": "Jun 10, 2026",
+      "instructor": "",
+      "image": "/certificates/google-ai-certificate.jpg",
+      "fileType": "image",
+      "credentialId": "OY70PAO6ZEGE",
+      "credentialUrl": "https://coursera.org/verify/professional-cert/OY70PAO6ZEGE",
+      "available": true,
+      "skills": []
+    },
+    {
+      "id": "ml-specialization",
+      "name": "Machine Learning Specialization",
+      "issuer": "DeepLearning.AI \u00b7 Coursera",
+      "status": "Completed",
+      "issueDate": "Nov 20, 2025",
+      "instructor": "Andrew Ng",
+      "image": "/certificates/ml-specialization-certificate.jpg",
+      "fileType": "image",
+      "credentialId": "9B1HXOEPFMDK",
+      "credentialUrl": "https://coursera.org/verify/specialization/9B1HXOEPFMDK",
+      "available": true,
+      "skills": []
+    },
+    {
+      "id": "python-data-science",
+      "name": "Python for Data Science",
+      "issuer": "Coursera",
+      "status": "Completed",
+      "issueDate": "",
+      "instructor": "",
+      "image": "",
+      "fileType": "none",
+      "credentialId": "",
+      "credentialUrl": "",
+      "available": false,
+      "skills": [
+        "Python Programming",
+        "Data Analysis",
+        "NumPy",
+        "Pandas",
+        "Data Visualization"
+      ]
+    },
+    {
+      "id": "python-data-engineering",
+      "name": "Python for Data Engineering",
+      "issuer": "Coursera",
+      "status": "Completed",
+      "issueDate": "",
+      "instructor": "",
+      "image": "",
+      "fileType": "none",
+      "credentialId": "",
+      "credentialUrl": "",
+      "available": false,
+      "skills": [
+        "Python",
+        "Data Engineering",
+        "ETL",
+        "SQL",
+        "Data Pipelines"
+      ]
+    },
+    {
+      "id": "foundations-ai-ml",
+      "name": "Foundations of AI & Machine Learning",
+      "issuer": "Coursera",
+      "status": "Completed",
+      "issueDate": "",
+      "instructor": "",
+      "image": "",
+      "fileType": "none",
+      "credentialId": "",
+      "credentialUrl": "",
+      "available": false,
+      "skills": [
+        "Artificial Intelligence",
+        "Machine Learning",
+        "Supervised Learning",
+        "Unsupervised Learning",
+        "Neural Networks"
+      ]
+    },
+    {
+      "id": "rdbms-essentials",
+      "name": "Relational Databases (RDBMS) Essentials",
+      "issuer": "Coursera",
+      "status": "Completed",
+      "issueDate": "",
+      "instructor": "",
+      "image": "",
+      "fileType": "none",
+      "credentialId": "",
+      "credentialUrl": "",
+      "available": false,
+      "skills": [
+        "SQL",
+        "Database Design",
+        "PostgreSQL",
+        "MySQL",
+        "Database Normalization"
+      ]
+    },
+    {
+      "id": "genai-prompt-engineering",
+      "name": "Generative AI: Prompt Engineering",
+      "issuer": "Coursera",
+      "status": "Completed",
+      "issueDate": "",
+      "instructor": "",
+      "image": "",
+      "fileType": "none",
+      "credentialId": "",
+      "credentialUrl": "",
+      "available": false,
+      "skills": [
+        "Prompt Engineering",
+        "Large Language Models",
+        "AI Workflows",
+        "Generative AI",
+        "AI Productivity"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Sindh, Jamshoro",
+      "degree": "Bachelor of Science in Artificial Intelligence",
+      "period": "In Progress \u00b7 Expected 2027",
+      "grade": ""
+    },
+    {
+      "institution": "Govt. Shah Latif Girls College, Hyderabad",
+      "degree": "Intermediate",
+      "period": "2021 \u2013 2023",
+      "grade": "A-1"
+    },
+    {
+      "institution": "New Falconhouse Grammar School, Hyderabad",
+      "degree": "Matriculation",
+      "period": "2019 \u2013 2021",
+      "grade": "A-1"
+    }
+  ],
+  "testimonials": []
+}

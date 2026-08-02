@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0A0A18;
+  color: #F5F5FA;
+  font-family: 'Inter', sans-serif;
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
+h1, h2, h3, .font-display {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+section[id] {
+  scroll-margin-top: 80px;
+}
+
+.hero-heading {
+  background: linear-gradient(180deg, #F5F5FA 0%, #E91E8C 140%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+::selection {
+  background-color: #E91E8C;
+  color: #F5F5FA;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ─── Marquee keyframes ───────────────────────────────────────────────────────
+   marqueeLeft  : scrolls right → left  (default for hero tagline & skills row 2)
+   marqueeRight : scrolls left → right  (skills row 1)
+   Both translate exactly -50% / 0% so the seamless duplicate creates a
+   gapless loop with no visible jump.
+─────────────────────────────────────────────────────────────────────────────── */
+@keyframes marqueeLeft {
+  0%   { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(-50%, 0, 0); }
+}
+
+@keyframes marqueeRight {
+  0%   { transform: translate3d(-50%, 0, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+
+/* Hero eyebrow: slides one copy (-50%) then loops seamlessly */
+@keyframes heroRoleSlide {
+  0%   { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(-50%, 0, 0); }
+}
+
+/* Pause the scrolling track when the user hovers anywhere over it.
+   Using the parent wrapper (overflow-hidden div) as the hover target
+   ensures the whole band freezes, not just individual pills. */
+div:hover > .marquee-track {
+  animation-play-state: paused !important;
+}
