@@ -4,7 +4,6 @@ import { ArrowDown } from 'lucide-react';
 import { usePortfolio } from '@/hooks/usePortfolio';
 import SocialLinks from '@/components/SocialLinks';
 import NodeGraphBackground from '@/components/ui/NodeGraphBackground';
-import MarqueeRow from '@/components/ui/MarqueeRow';
 
 function usePhotoParallax() {
   const ref = useRef<HTMLDivElement>(null);
