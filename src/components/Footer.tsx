@@ -71,7 +71,7 @@ export default function Footer() {
               <div className="relative inline-block">
                 <div className="absolute -inset-2 rounded-2xl bg-gradient-to-r from-accent/25 via-accent-violet/20 to-transparent blur-xl opacity-70 pointer-events-none" />
                 <h3 className="relative font-display text-2xl sm:text-3xl font-bold tracking-tight text-ink">
-                  <span className="hero-heading">{profile.name}</span>
+                  <span className="hero-heading">Sunaina</span>
                 </h3>
               </div>
 
