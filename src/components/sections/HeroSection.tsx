@@ -4,6 +4,7 @@ import { ArrowDown } from 'lucide-react';
 import { usePortfolio } from '@/hooks/usePortfolio';
 import SocialLinks from '@/components/SocialLinks';
 import NodeGraphBackground from '@/components/ui/NodeGraphBackground';
+import profileImg from '@/assets/img/profile.jpg';
 
 function usePhotoParallax() {
   const ref = useRef<HTMLDivElement>(null);
@@ -197,7 +198,7 @@ export default function HeroSection() {
               className="will-change-transform"
             >
               <img
-                src="/src/assets/img/profile.jpg"
+                src={profileImg}
                 alt={profile.name}
                 className="w-full rounded-full object-cover shadow-[0_0_80px_-8px_rgba(233,30,140,0.55)]"
               />

@@ -11,18 +11,34 @@ export default function ContactSection() {
   const [formState, setFormState] = useState<FormState>('idle');
   const formRef = useRef<HTMLFormElement>(null);
 
-  const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY as string;
+  const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY as string | undefined;
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    setFormState('loading');
 
-    const formData = new FormData(event.currentTarget);
+    if (!accessKey) {
+      console.error(
+        '[ContactSection] VITE_WEB3FORMS_ACCESS_KEY is not defined. ' +
+        'Add it to your .env file locally and to the Vercel Environment Variables dashboard for production.'
+      );
+      setFormState('error');
+      return;
+    }
+
+    setFormState('loading');
 
     try {
       const response = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
-        body: formData,
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify({
+          access_key: accessKey,
+          subject: '🚀 New Portfolio Inquiry | Sunaina Khan',
+          from_name: 'Sunaina Portfolio',
+          name: form.name,
+          email: form.email,
+          message: form.message,
+        }),
       });
 
       const data: { success: boolean; message?: string } = await response.json();
@@ -107,10 +123,6 @@ export default function ContactSection() {
           onSubmit={handleSubmit}
           className="space-y-4"
         >
-          {/* Hidden Web3Forms fields */}
-          <input type="hidden" name="access_key" value={accessKey} />
-          <input type="hidden" name="subject" value="🚀 New Portfolio Inquiry | Sunaina Khan" />
-          <input type="hidden" name="from_name" value="Sunaina Portfolio" />
 
           <input
             type="text"

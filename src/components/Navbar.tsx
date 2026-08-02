@@ -58,12 +58,18 @@ export default function Navbar() {
   const handleNavClick = (href: string) => {
     setMenuOpen(false);
     const targetId = href.replace('#', '');
-    const el = document.getElementById(targetId) || document.querySelector(href);
-    if (el) {
-      const yOffset = -80;
-      const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
-      window.scrollTo({ top: y, behavior: 'smooth' });
-    }
+
+    // Defer scroll so the mobile menu close animation (250ms) finishes
+    // before we measure the element's position. Without this, getBoundingClientRect
+    // returns an incorrect offset while the drawer is still collapsing.
+    setTimeout(() => {
+      const el = document.getElementById(targetId) || document.querySelector(href);
+      if (el) {
+        const yOffset = -80;
+        const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+      }
+    }, 300);
   };
 
   return (
