@@ -80,19 +80,10 @@ export default function Navbar() {
           : 'bg-transparent py-5'
       }`}
     >
-      <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        {/* Brand Logo */}
-        <a
-          href="#home"
-          onClick={(e) => {
-            e.preventDefault();
-            handleNavClick('#home');
-          }}
-          aria-label="Go to home"
-        />
-
+      {/* Desktop nav — centered */}
+      <nav className="mx-auto hidden max-w-7xl items-center justify-center px-4 sm:px-6 lg:flex lg:px-8">
         {/* Desktop Navigation Menu */}
-        <div className="hidden lg:flex items-center gap-1 xl:gap-2">
+        <div className="flex items-center gap-1 xl:gap-2">
           <ul className="flex items-center gap-1 rounded-full border border-border/60 bg-surface/40 p-1.5 backdrop-blur-md">
             {NAV_ITEMS.map((item) => {
               const sectionId = item.href.replace('#', '');
@@ -137,16 +128,19 @@ export default function Navbar() {
             <ArrowUpRight className="h-3.5 w-3.5 opacity-80" />
           </a>
         </div>
+      </nav>
 
-        {/* Mobile / Tablet Menu Button */}
+      {/* Mobile / Tablet header row */}
+      <div className="mx-auto flex max-w-7xl items-center justify-end px-4 sm:px-6 lg:hidden">
+        {/* Mobile Menu Button */}
         <button
-          className="relative z-50 flex h-10 w-10 items-center justify-center rounded-full border border-border/80 bg-surface/60 text-ink transition-colors hover:border-accent/50 hover:bg-surface focus:outline-none lg:hidden"
+          className="relative z-50 flex h-10 w-10 items-center justify-center rounded-full border border-border/80 bg-surface/60 text-ink transition-colors hover:border-accent/50 hover:bg-surface focus:outline-none"
           onClick={() => setMenuOpen((o) => !o)}
           aria-label="Toggle navigation menu"
         >
           {menuOpen ? <X className="h-5 w-5 text-accent" /> : <Menu className="h-5 w-5" />}
         </button>
-      </nav>
+      </div>
 
       {/* Mobile / Tablet Navigation Overlay & Drawer */}
       <AnimatePresence>
