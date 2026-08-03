@@ -1,4 +1,4 @@
-import { Github, Linkedin, Instagram, Mail, Phone, Globe } from 'lucide-react';
+import { Github, Linkedin, Instagram, Mail, Globe } from 'lucide-react';
 import type { SocialLinks as SocialLinksType } from '@/types/portfolio';
 
 interface Props {
@@ -19,7 +19,6 @@ const LINK_CONFIG: Array<{
   { key: 'instagram', icon: Instagram, label: 'Instagram', href: (v) => v, external: true },
   // Email icon scrolls to the Contact section instead of opening a mail client.
   { key: 'email', icon: Mail, label: 'Email — go to Contact', href: () => '#contact', external: false },
-  { key: 'phone', icon: Phone, label: 'Phone', href: (v) => `tel:${v.replace(/\s+/g, '')}`, external: false },
   { key: 'website', icon: Globe, label: 'Website', href: (v) => v, external: true },
 ];
 
