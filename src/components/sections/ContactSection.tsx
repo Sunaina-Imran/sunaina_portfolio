@@ -1,6 +1,6 @@
 import { useState, useRef } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin, Send } from 'lucide-react';
+import { Mail, MapPin, Send } from 'lucide-react';
 import { usePortfolio } from '@/hooks/usePortfolio';
 
 type FormState = 'idle' | 'loading' | 'success' | 'error';
@@ -101,13 +101,6 @@ export default function ContactSection() {
           >
             <Mail size={18} className="text-accent" />
             {profile.social.email}
-          </a>
-          <a
-            href={`tel:${profile.social.phone.replace(/\s+/g, '')}`}
-            className="flex items-center gap-3 font-body text-ink-muted transition-colors hover:text-accent"
-          >
-            <Phone size={18} className="text-accent" />
-            {profile.social.phone}
           </a>
           <p className="flex items-center gap-3 font-body text-ink-muted">
             <MapPin size={18} className="text-accent" />

@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { ArrowRight, Mail, Phone, MapPin } from 'lucide-react';
+import { ArrowRight, Mail, MapPin } from 'lucide-react';
 import { usePortfolio } from '@/hooks/usePortfolio';
 import SocialLinks from '@/components/SocialLinks';
 
@@ -175,13 +175,6 @@ export default function Footer() {
                   <Mail className="h-4 w-4 text-ink-faint transition-colors group-hover:text-accent shrink-0" />
                   <span className="truncate">{profile.social.email}</span>
                 </a>
-
-                {profile.social.phone && (
-                  <div className="flex items-center gap-2.5 font-body text-sm text-ink-muted">
-                    <Phone className="h-4 w-4 text-ink-faint shrink-0" />
-                    <span>{profile.social.phone}</span>
-                  </div>
-                )}
               </div>
 
               <div className="mt-5">
